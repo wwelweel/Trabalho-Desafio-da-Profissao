@@ -144,3 +144,51 @@ font-size:1.2rem;
 margin:0;
 line-height:1.6;
 }
+
+/* enlarge and align logos */
+.logos{gap:90px!important;align-items:center!important;}
+.logos img:first-child{height:120px!important;}
+.logos img:last-child{height:100px!important;position:relative;top:2px;}
+
+/* enlarge logos */
+.logos img,.project-logos img,.logo-group img{height:140px !important;width:auto !important;}
+
+/* force larger footer logos */
+#fim .logos img:first-child{height:180px !important;}
+#fim .logos img:last-child{height:150px !important;}
+#fim .logos{gap:80px !important;align-items:center;}
+
+
+.finalbox{max-width:900px;margin:0 auto;text-align:center;padding:30px 20px;}
+.finalbox h2:first-child{margin-bottom:32px;}
+.finalbox h3{margin-bottom:24px;line-height:1.35;}
+.finalbox>p{max-width:760px;margin:0 auto 60px auto;line-height:1.7;}
+.finalbox h2:last-of-type{margin:10px 0 28px;}
+.finalbox ul{list-style:disc;text-align:left;display:inline-block;padding-left:28px;margin:0 auto;}
+.finalbox li{margin:14px 0;font-size:1.08rem;line-height:1.6;}
+
+
+.hero{position:relative;overflow:hidden}
+.hero-bg{position:relative;z-index:1}
+.circle,.line,.chip{position:absolute;pointer-events:none}
+.circle{border:1px solid rgba(86,147,255,.18);border-radius:50%}
+.c1{width:340px;height:340px;top:-80px;left:-120px}
+.c2{width:220px;height:220px;right:8%;top:80px}
+.c3{width:140px;height:140px;right:18%;bottom:40px}
+.line{height:2px;background:linear-gradient(90deg,transparent,rgba(88,150,255,.35),transparent)}
+.l1{width:280px;top:140px;left:8%;transform:rotate(-18deg)}
+.l2{width:220px;right:10%;bottom:120px;transform:rotate(22deg)}
+.chip{font-size:2.6rem;opacity:.12}
+.chip{left:9%;bottom:18%}
+.chip.ai{right:12%;left:auto;top:18%}
+.chip.cloud{right:24%;left:auto;bottom:12%}
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background-image:radial-gradient(rgba(90,150,255,.18) 1px, transparent 1px);
+background-size:32px 32px;
+opacity:.35;
+}
+
+.tagline{display:block;font-size:18px;font-weight:400;color:#7dc8ff;margin-top:4px}
