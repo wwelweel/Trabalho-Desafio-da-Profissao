@@ -49,3 +49,98 @@ section,.card,.info,footer,header{background:#0f172a!important;color:#e5e7eb!imp
 .logos{display:flex;justify-content:center;gap:40px;margin:25px 0}
 .logos img{height:72px;width:auto}
 h1,h2,h3{color:#f8fafc}
+
+.logos,.project-logos,.logo-group{background:transparent!important;box-shadow:none!important;border:none!important;padding:0!important}
+.logos img,.project-logos img,.logo-group img{
+background:transparent!important;
+box-shadow:none!important;
+border:none!important;
+display:block;
+height:72px;
+width:auto;
+object-fit:contain;
+}
+
+
+/* ChatGPT improvements */
+header, nav{
+ background:linear-gradient(90deg,#0b1220,#13254b)!important;
+ border-bottom:1px solid rgba(96,165,250,.25)!important;
+ box-shadow:0 8px 24px rgba(0,0,0,.35)!important;
+ backdrop-filter:blur(10px);
+}
+.logos img{
+ height:95px!important;
+ width:auto!important;
+ object-fit:contain!important;
+ background:transparent!important;
+ box-shadow:none!important;
+ border:none!important;
+}
+.logos{
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ gap:48px;
+ padding:10px 0;
+}
+
+nav ul, nav li, nav a{background:transparent!important;box-shadow:none!important;border:none!important}
+nav a{padding:0 10px!important}
+button,.btn,.hero .btn,a.btn{display:none!important}
+.logo,.brand{font-size:15px!important;font-weight:700!important}
+
+.back-to-top,.scroll-top,.to-top,#backToTop{display:none!important;}
+
+.back-to-top,.scroll-top,.to-top,#backToTop,[class*="back-to-top"],[class*="scroll-top"]{
+ display:none!important;
+ visibility:hidden!important;
+ opacity:0!important;
+ width:0!important;
+ height:0!important;
+}
+
+/* remove floating top button */
+.back-to-top,#backToTop,.scroll-top,.to-top,
+[class*="back"],[id*="backToTop"],[class*="scroll-top"],[class*="to-top"],
+.fab,.floating-button{
+display:none!important;
+opacity:0!important;
+visibility:hidden!important;
+pointer-events:none!important;
+width:0!important;
+height:0!important;
+}
+
+.practice-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:22px;
+margin-top:35px;
+}
+.practice-item{
+display:flex;
+gap:18px;
+align-items:flex-start;
+background:#18243b;
+border:1px solid rgba(96,165,250,.25);
+border-radius:18px;
+padding:22px;
+}
+.practice-icon{
+width:22px;
+height:22px;
+min-width:22px;
+border-radius:50%;
+background:#3b82f6;
+margin-top:6px;
+box-shadow:0 0 18px rgba(59,130,246,.45);
+}
+.practice-item h3{
+margin:0 0 10px;
+font-size:1.2rem;
+}
+.practice-item p{
+margin:0;
+line-height:1.6;
+}
